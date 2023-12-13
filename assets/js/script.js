@@ -1,6 +1,9 @@
 'use strict';
 
 
+import CMS from "netlify-cms-app";
+
+CMS.init();
 
 /**
  * Add event listener on multiple elements
@@ -127,6 +130,9 @@ document.addEventListener('DOMContentLoaded', () => {
       bar.style.width = `${percentage}%`;
   });
 });
+
+
+
 
 
    
