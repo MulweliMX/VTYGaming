@@ -1,10 +1,6 @@
 'use strict';
 
 
-import CMS from "netlify-cms-app";
-
-CMS.init();
-
 /**
  * Add event listener on multiple elements
  */
