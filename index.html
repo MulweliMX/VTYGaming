@@ -1245,21 +1245,19 @@
                         <p class="footer-text">
                             Sign up to be first to receive the latest Mods Notification, Game Updates, and Channel news.
                         </p>
-
-                        <div class="input-wrapper">
-                            <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
-                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-                        </div>
-                        
-                        <div class="input-wrapper">
-                            <input type="email" name="_replyto" placeholder="Email address" required class="input-field" autocomplete="off">
-                            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-                        </div>
-                        
-                        <!-- Modify the form tag to include the Formspree endpoint and the _subject field -->
                         <form action="https://formspree.io/f/mwkgeeen" method="POST" class="subscribe-form">
                             <!-- Include a hidden field for the subject of the email -->
                             <input type="hidden" name="_subject" value="New Form Submission">
+                        
+                            <div class="input-wrapper">
+                                <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
+                                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                            </div>
+                        
+                            <div class="input-wrapper">
+                                <input type="email" name="_replyto" placeholder="Email address" required class="input-field" autocomplete="off">
+                                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                            </div>
                         
                             <!-- Add other form fields if needed -->
                         
@@ -1269,7 +1267,6 @@
                             </button>
                         </form>
                         
-
                     </div>
 
                 </div>
