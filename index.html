@@ -160,7 +160,7 @@
                         </p>
 
                         <!-- Modify the form tag to include the Formspr**e**e endpoint -->
-<form action="https://formspree.io/your_email_here" method="POST">
+<form action="https://formspree.io/f/mwkgeeen" method="POST">
     <div class="input-wrapper">
         <input type="email" name="email_address" placeholder="Type your email address" required class="input-field" autocomplete="off">
         <button type="submit" class="btn btn-primary">
@@ -1252,12 +1252,17 @@
                         </div>
                         
                         <div class="input-wrapper">
-                            <input type="email" name="email_address" placeholder="Email address" required class="input-field" autocomplete="off">
+                            <input type="email" name="_replyto" placeholder="Email address" required class="input-field" autocomplete="off">
                             <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
                         </div>
                         
-                        <!-- Modify the form tag to include the Formspr**e**e endpoint -->
-                        <form action="https://formspree.io/your_email_here" method="POST" class="subscribe-form">
+                        <!-- Modify the form tag to include the Formspree endpoint and the _subject field -->
+                        <form action="https://formspree.io/f/mwkgeeen" method="POST" class="subscribe-form">
+                            <!-- Include a hidden field for the subject of the email -->
+                            <input type="hidden" name="_subject" value="New Form Submission">
+                        
+                            <!-- Add other form fields if needed -->
+                        
                             <button type="submit" class="btn btn-primary">
                                 <span class="span">Subscribe</span>
                                 <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
