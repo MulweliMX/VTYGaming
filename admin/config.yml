@@ -14,7 +14,7 @@ public_folder: "/assets/images"
 collections:
   - name: "slider-items"
     label: "Slider Items"
-    folder: "VUTOMYTRUCKING/slider-items"
+    folder: "VUTOMYTRUCKING"
     create: true
     slug: "{{slug}}"
     media_folder: "VUTOMYTRUCKING/assets/images"
