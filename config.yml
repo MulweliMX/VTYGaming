@@ -1,13 +1,11 @@
 backend:
-  name: github # You can choose other backends like GitLab, Bitbucket, etc.
-  repo: MulweliMX/VTYGaming # Replace with your GitHub repository
-   branch: main
-  identity: true 
+  name: github
+  repo: MulweliMX/VTYGaming
+  branch: main  # Correct indentation here
+  identity: true
 
-  identity:
-  enabled: true
-  admin:
-    - mxcreations0123@gmail.com
+
+
 
 
 media_folder: "VUTOMYTRUCKING/assets/images"
