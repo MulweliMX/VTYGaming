@@ -1,6 +1,14 @@
 backend:
   name: github # You can choose other backends like GitLab, Bitbucket, etc.
   repo: MulweliMX/VTYGaming # Replace with your GitHub repository
+   branch: main
+  identity: true 
+
+  identity:
+  enabled: true
+  admin:
+    - mxcreations0123@gmail.com
+
 
 media_folder: "VUTOMYTRUCKING/assets/images"
 public_folder: "/assets/images"

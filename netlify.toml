@@ -1,2 +1,8 @@
 [build]
   functions = "netlify/functions"
+
+[dev]
+  command = "npm start"
+  port = 5500            # The port your local development server runs on
+  targetPort = 64689      # The port where your local development server is running
+
