@@ -1,0 +1,21 @@
+backend:
+  name: github # You can choose other backends like GitLab, Bitbucket, etc.
+  repo: MulweliMX/VTYGaming # Replace with your GitHub repository
+
+media_folder: "VUTOMYTRUCKING/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "slider-items"
+    label: "Slider Items"
+    folder: "VUTOMYTRUCKING"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "VUTOMYTRUCKING/assets/images"
+    public_folder: "/assets/images"
+
+    fields:
+      - { name: "link", label: "Link", widget: "string" }
+      - { name: "image", label: "Image", widget: "image" }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "subtitle", label: "Subtitle", widget: "string" }
