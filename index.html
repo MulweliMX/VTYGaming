@@ -235,91 +235,23 @@
 
                         <div class="slider" data-slider>
                             <ul class="slider-list" data-slider-container>
-
+                              {% for item in cms.slider_items %}
                                 <li class="slider-item">
-                                    <a href="your_link_here" class="slider-card">
-                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
-                                            <img src="./assets/images/truckafrica.JPEG" width="507" height="618" loading="lazy" alt="Sport" class="img-cover">
-                                        </figure>
-                                    
-                                        <div class="slider-content">
-                                            <span class="slider-title">Road to Africa</span>
-                                            <p class="slider-subtitle">1 File</p>
-                                        </div>
-                                    </a>
-                                    
-                                    </a>
+                                  <a href="{{ item.link }}" class="slider-card">
+                                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                                      <img src="{{ item.image }}" width="507" height="618" loading="lazy" alt="{{ item.title }}" class="img-cover">
+                                    </figure>
+                                    <div class="slider-content">
+                                      <span class="slider-title">{{ item.title }}</span>
+                                      <p class="slider-subtitle">{{ item.subtitle }}</p>
+                                    </div>
+                                  </a>
                                 </li>
-
-                                <li class="slider-item">
-                                    <a href="#" class="slider-card">
-                                        <a href="your_link_here" class="slider-card">
-                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
-                                            <img src="./assets/images/truck2disp.JPG" width="507" height="618" loading="lazy" alt="Travel" class="img-cover">
-                                        </figure>
-
-                                        <div class="slider-content">
-                                            <span class="slider-title">Big Map Combo</span>
-
-                                            <p class="slider-subtitle">6 Files</p>
-                                        </div>
-                                    </a>
-                                    </a>
-                                </li>
-
-                                <li class="slider-item">
-                                    <a href="your_link_here" class="slider-card">
-                                         
-                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
-                                            <img src="./assets/images/truck1.JPEG" width="507" height="618" loading="lazy" alt="Design" class="img-cover">
-                                        </figure>
-
-                                        <div class="slider-content">
-                                            <span class="slider-title">Road to Asia</span>
-
-                                            <p class="slider-subtitle">5 Files</p>
-                                        </div>
-                                    </a>
-                                    </a>
-                                </li>
-
-                                <li class="slider-item">
-                                    <a href="your_link_here" class="slider-card">
-
-                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
-                                            <img src="./assets/images/truck2disp.JPG" width="507" height="618" loading="lazy" alt="Movie" class="img-cover">
-                                        </figure>
-
-                                        <div class="slider-content">
-                                            <span class="slider-title">Trailor Mods</span>
-
-                                            <p class="slider-subtitle">7 Files</p>
-                                        </div>
-                                    </a>
-                                    </a>
-                                </li>
-
-                                <li class="slider-item">
-                                    <a href="your_link_here" class="slider-card">
-
-                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
-                                            <img src="./assets/images/truck2disp.JPG" width="507" height="618" loading="lazy" alt="Lifestyle" class="img-cover">
-                                        </figure>
-
-                                        <div class="slider-content">
-                                            <span class="slider-title">Truck Mods</span>
-
-                                            <p class="slider-subtitle">4 Files</p>
-                                        </div>
-                                    </a>
-                                    </a>
-                                </li>
-
+                              {% endfor %}
                             </ul>
+                          </div>
                         </div>
-
-                    </div>
-
+                          
                 </div>
             </section>
 
