@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
 
     <!-- 
     - custom css link
@@ -37,7 +37,7 @@
     <link rel="preload" as="image" href="./assets/images/hero-banner.png">
     <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
     <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
-
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body id="top">
@@ -1327,7 +1327,17 @@
 
 
 
-
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
 
     <!-- 
     - custom js link
@@ -1344,8 +1354,9 @@
 <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 <script src="/admin/cms.js"></script> -->
 
+
    
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 </body>
 
 </html>
